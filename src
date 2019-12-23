@@ -1,0 +1,28 @@
+//This is the JS code which sums each entries in instances of array and then returns that array which has got highest sums of
+//array elements checking each array
+// getBestStudent({
+//  John: [100, 90, 80],
+//  Bob: [100, 70, 80]
+// }) ➞ "John"
+//The reduce() method reduces the array to a single value.
+//The reduce() method executes a provided function for each value of the array (from left-to-right).
+
+function getBestStudent(grades) {
+  let bestScore = 0;
+  let bestStudent = '';
+
+  for (name in grades) {
+      const sum = grades[name].reduce((acc, grade) => {
+      return acc += grade
+      }, 0);
+    if (sum/(grades[name]).length > bestScore) {
+      bestScore = sum/(grades[name]).length
+      bestStudent = name;
+    }
+  }
+
+  return bestStudent;
+}
+
+
+//multitude of soln in https://edabit.com/challenge/nSg24HbusyCQKn9xk but this my fav
