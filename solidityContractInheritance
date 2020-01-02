@@ -1,4 +1,5 @@
-//In the following example, D, can call c.getData() to retrieve the value of data in state storage, but is not able to call f. Contract E is derived from C and, thus, can call compute.
+//In the following example, D, can call c.getData() to retrieve the value of data in state storage, but is not able to call f. Contract E 
+//is derived from C and, thus, can call compute.
 
 // This will not compile
 
