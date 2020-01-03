@@ -1,0 +1,27 @@
+class Solution(object):
+    def numOffices(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        # your code here
+        if List[List[i]]!= List[List[i+1]]
+        numOffices++;
+        return 0
+
+def get_matrix():
+    row = int(input())
+    col = int(input())
+    grid = [["0"]*col]*row
+
+    for i in range(row):
+        line = input()
+        grid[i] = list(line)[0:col]
+    return grid
+
+        
+if __name__ == "__main__":
+    sol = Solution()
+    matrix = get_matrix()
+    offices = sol.numOffices(matrix)
+    print(offices)
