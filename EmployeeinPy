@@ -1,0 +1,25 @@
+class Employee(object):
+    """Comment1: models real life employee""" 
+    def_init_(self,employee_name):
+       self.employee_name =employee_name
+       
+    def calculate_wage(self,hours):
+       self.hours=hours
+       return hours*20.00
+       
+//child class of PartTimeEmployee from Employee
+//the function defined inside this dont provide any logical significance
+//but just to show the programmic concept of super
+class PartTimeEmployee(Employee):
+   def calculate_wage(self,hours):
+      self.hours=hours
+      return hours*20.00
+      
+   def full_time_wage(self,hours):
+      return super(PartTimeEmployee,self).calculate_wage(hours)
+
+milton = PartTimeEmployee("Milton")
+print milton.full_time_wage(10)  //200
+print milton.calculate_wage(10)  //120
+
+   
