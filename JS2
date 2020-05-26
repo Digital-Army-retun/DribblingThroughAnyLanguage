@@ -1,0 +1,5 @@
+let name=['Jay', 'Kay'];  
+names.forEach(
+   name =>
+   {consolelog(name+'is best')}
+)
